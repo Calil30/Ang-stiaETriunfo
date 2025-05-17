@@ -1,0 +1,42 @@
+🎯 1. Quantidade de composições por tipo e ano
+Como buscar Use fontes como o IMSLP ou Wikipedia para listar todas as obras dele.
+
+Gráfico Um gráfico de barras ou linha temporal, mostrando a quantidade de obras por ano ou período (ex 1790–1800, 1800–1810…).
+
+Insight Mostra em que fase da vida ele foi mais produtivo.
+
+🎼 2. Distribuição das obras por gênero musical
+Como buscar Categorias como sinfonias, sonatas, quartetos, concertos, óperas etc.
+
+Gráfico Um gráfico de pizza ou de barras horizontais com a quantidade de obras por tipo.
+
+Insight Ajuda o visitante a entender em quais estilos Beethoven mais atuou.
+
+🧠 3. Relação entre fase da vida e complexidade das obras
+Como buscar Divida a vida dele em fases (infância, juventude, maturidade, surdez total).
+Você pode buscar análises musicológicas ou até metadados como tempo de duração, tonalidade, uso de instrumentos.
+
+Gráfico Linha do tempo + gráfico de densidade ou intensidade.
+
+Insight Mostra como a surdez impactou (ou não) suas criações.
+
+🎧 4. Popularidade das obras hoje em dia
+Como buscar Dados do Spotify (via API), YouTube ou Last.fm — veja quais obras têm mais execuçõesreproduções.
+
+Gráfico Ranking com gráfico de colunas ordenadas.
+
+Insight Mostra como algumas obras continuam sendo muito ouvidas até hoje.
+
+🌍 5. Difusão global das execuções de Beethoven
+Como buscar Sites de orquestras sinfônicas, festivais e até o Google Trends.
+
+Gráfico Mapa de calor mostrando em que países ou cidades há mais execuções registradas.
+
+Insight Visualiza o impacto global da obra de Beethoven.
+
+📅 6. Colaborações e influências
+Como buscar Textos acadêmicos ou listas de compositores influenciados por Beethoven (ex Brahms, Wagner).
+
+Gráfico Diagrama de rede (tipo “nó-conexão”) com Beethoven no centro.
+
+Insight Mostra a importância dele como influência musical histórica.
