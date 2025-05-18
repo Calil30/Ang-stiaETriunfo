@@ -37,23 +37,26 @@
     <section class="container-section1">
         <div class="login">
             <div class="form-login">
-
                 <div class="header-login">
-                    <h1>Login de usuário</h1>
-                </div>
-                
-                <div class="input-login">
-                    <h4>E-mail</h4>
-                    <input type="text" id="input_email" placeholder="Ex. emailUsuario@email.com">
-                        <br>
-                    <h4>Senha</h4>
-                    <input type="text" id="input_senha" placeholder="**************">
-                        <br>
-                    <button onclick="entrar()">Entrar</button>
+                    <h1>Login</h1>
+                    <p>Digite os seus dados de acesso no campo abaixo.</p>
                 </div>
 
+                <div class="input-login">
+                    <label for="input_email">E-mail</label>
+                    <input type="email" id="input_email" placeholder="Digite seu e-mail">
+
+                    <label for="input_senha">Senha</label>
+                    <input type="password" id="input_senha" placeholder="Digite sua senha">
+
+                    <a href="#" class="forgot-password">Esqueci minha senha</a>
+
+                    <button onclick="entrar()">Entrar</button>
+                    <p>Ainda não tem uma conta? <a href="#">Cadastre-se!</a></p>
+                </div>
             </div>
         </div>
+        
 
 <!------------------------------------------------ BLOCO DE CONTEÚDO 1 -->
 
