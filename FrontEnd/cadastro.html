@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="./assets/cadastro.css" />
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    
+    <nav class="container-menu">
+        <div class="logo">
+            <img src="../FrontEnd/imagens/logo.jpg">
+        </div>
+
+        <div class="menu-links">
+
+            <a href="#home" class="bloco">Home</a>
+            <a href="#" class="bloco">Objetivo</a>
+            <a href="#" class="bloco">História</a>
+            <a href="#" class="bloco">Obras principais</a>
+            
+
+            <div class="cadastro">
+
+                <a href="#" class="menu-cadastro">Cadastre-se!</a>
+
+            </div>
+
+        </div>
+    </nav>
+    <div class="form-cadastro">
+        <div class="container">
+            <div class="lado-esquerdo">
+            <h1>Angústia e triunfo</h1>
+            <img src="./imagens/partitura-cadastro.png" alt="Imagem de uma partitura original de Beethoven" />
+            <h2>Descubra o Legado de Beethoven</h2>
+            <p>Cadastre-se e explore a vida e obra do maior gênio da música.</p>
+            </div>
+
+            <div class="lado-direito">
+            <h1>Criar uma Conta</h1>
+            <p>Preencha os campos abaixo para se cadastrar.</p>
+            <form>
+                <label>Nome completo</label>
+                <input type="text" placeholder="Digite seu nome completo" required />
+
+                <label>E-mail</label>
+                <input type="email" placeholder="Digite seu e-mail" required />
+
+                <label>Senha</label>
+                <input type="password" placeholder="Crie uma senha" required />
+
+                <label>Confirmar senha</label>
+                <input type="password" placeholder="Confirme sua senha" required />
+
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p class="login-link">Já possui uma conta? <a href="./index.html">Faça login!</a></p>
+            </div>
+        </div>
+    </div>
+    <footer class="cadastro-footer">
+
+    </footer>
 </body>
 </html>
