@@ -22,9 +22,9 @@ body {
   height: 140px;
   background: rgb(0, 0, 0);
   align-items: center;
+  z-index: 1;
   justify-content: space-between;
   box-shadow: 0 4px 8px rgba(205, 0, 0, 0.559);
-  z-index: 1000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
 }
@@ -46,16 +46,9 @@ body {
 .menu-links {
   display: flex;
   align-items: center;
-  margin: 80px 100px 5px 5px;
-  gap: 25px;
-}
-
-.cadastro {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-right: 100px;
-  margin-left: 60px;
+  justify-content: left;
+  margin: 5% 20% 0% 5%;
+  gap: 40px;
 }
 
 .menu-barra {
@@ -66,10 +59,9 @@ body {
   font-size: 40px;
 }
 
-.bloco,
-.menu-cadastro {
+.bloco{
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
@@ -79,13 +71,12 @@ body {
   display: inline-block;
 }
 
-.bloco:hover,
-.menu-cadastro:hover {
-  color: red;
+.bloco:hover {
+  color: rgb(142, 121, 0);
   background: rgba(69, 1, 1, 0.05);
   transform: translateY(-3px);
-  border: 1px solid rgba(141, 0, 0, 0.767);
-  box-shadow: 0 5px 5px rgba(172, 0, 0, 0.373);
+  border: 1px solid rgb(142, 121, 0);
+  box-shadow: 0 5px 5px rgb(142, 121, 0);
   font-weight: bold;
 }
 
@@ -202,6 +193,8 @@ body {
   transform: translateY(-3px);
 }
 
+
+
 /****************************** LADO DO FORM DE LOGIN *********************/
 
 
@@ -228,7 +221,7 @@ body {
 }
 
 .texto-a{
-  width: 95%;
+  width: 98%;
   height: 499px;
   border-radius: 0 6px 6px 0;
   background-color: rgba(0, 0, 0, 0.788);
@@ -249,19 +242,209 @@ body {
 
 /******************************* SECTION 2 *****************************/
 
-.container-conteudo{
-  width: 100%;
-  height: auto;
-  padding: 10px 10px 0 10px;
+.container-conteudo {
+  display: flex;
+  width: 99.5%;
+  height: 600px;
+  margin: 5px auto;
+  border: 1px solid rgba(255, 0, 0, 0.103);
+  border-radius: 5px;
+  background-color: #f5f5f53c;
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
 }
 
-.section-conteudo{
+.section-conteudo {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 550px;
-  background-color: rgba(248, 241, 241, 0.215);
-  backdrop-filter: blur(6px);
-  border: 1px solid red;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.section-conteudo .imagem-lateral {
+  width: 40%;
+  height: 100%;
+}
+
+.section-conteudo .imagem-lateral img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  object-fit: cover;
+  display: block;
+}
+
+.section-conteudo .texto-biografia {
+  width: 60%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #f5f5f5;
+  border-radius: 0 5px 5px 0;
+  overflow-y: auto; /* caso o texto seja maior que a área */
+}
+
+.section-conteudo .texto-biografia h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.section-conteudo .texto-biografia p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.section-conteudo .texto-biografia button {
+  width: 25%;
+  margin-top: 40px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.section-conteudo .texto-biografia button:hover {
+  background-color: darkred;
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .section-conteudo {
+    flex-direction: column;
+  }
+
+  .section-conteudo .imagem-lateral,
+  .section-conteudo .texto-biografia {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .section-conteudo .imagem-lateral img {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .section-conteudo .texto-biografia {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+  }
+}
+
+/****************************************** SECTION 3 ******************************/
+.height-auto{
+  height: auto;
+}
+
+.estilo-cards {
+  flex-direction: column;
+  padding: 40px;
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  color: #fff;
   border-radius: 8px;
+}
+
+.texto-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.texto-intro h1{
+  margin-bottom: 20px;
+}
+
+
+.cards-beneficios {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 20px;
+  width: 280px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: rgba(255,255,255,0.1);
+  cursor: pointer;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.destaque-explore {
+  background: linear-gradient(to right, #3e3e3e, #1e1e1e);
+}
+
+.estilo-cta {
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding: 50px 30px;
+  color: #fff;
+}
+
+.estilo-cta h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.estilo-cta p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.botoes-explore {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-explorar,
+.btn-ouvir {
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: darkred;
+  color: #fff;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-explorar:hover,
+.btn-ouvir:hover {
+  background-color: #ff1f1f;
+  transform: scale(1.05);
 }
 
 
