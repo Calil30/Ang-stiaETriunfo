@@ -24,18 +24,17 @@ body {
   align-items: center;
   z-index: 1;
   justify-content: space-between;
-  box-shadow: 0 4px 8px rgba(205, 0, 0, 0.559);
+  box-shadow: 0 4px 8px rgb(142, 121, 0);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
 }
-
 
 .logo {
   width: auto;
   height: auto;
   display: flex;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 100px; 
 }
 
 .logo img {
@@ -44,14 +43,13 @@ body {
 }
 
 .menu-links {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  margin: 5% 20% 0% 5%;
-  gap: 40px;
+  display: flex; 
+  align-items: center; 
+  margin-right: 15%; 
+  margin-top: 60px;
 }
 
-.menu-barra {
+.menu-barra { 
   color: black;
   font-weight: lighter;
   margin: 0 5px;
@@ -59,25 +57,26 @@ body {
   font-size: 40px;
 }
 
-.bloco{
+.bloco {
   cursor: pointer;
-  padding: 10px;
+  padding: 10px; 
+  margin-left: 35px;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
   font-weight: 500;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  display: inline-block;
+  white-space: nowrap;
 }
 
 .bloco:hover {
-  color: rgb(142, 121, 0);
+  color: rgb(255, 227, 192);
   background: rgba(69, 1, 1, 0.05);
   transform: translateY(-3px);
   border: 1px solid rgb(142, 121, 0);
-  box-shadow: 0 5px 5px rgb(142, 121, 0);
-  font-weight: bold;
+  box-shadow: 0 5px 5px rgba(142, 121, 0, 0.732);
+  font-weight: bolder;
 }
 
 .bloco:active,
@@ -105,8 +104,9 @@ body {
   height: 500px;
   background-color: rgb(255, 255, 255);
   margin: 120px 0 0 5px;
-  border: 1px solid rgba(255, 0, 0, 0.132);
-  border-radius: 5px;
+  border-right: 3px solid rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(0, 0, 0);
+  border-radius: 8px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -204,7 +204,7 @@ body {
   height: 500px;
   margin: 120px 5px 0 5px;
   border: 1px solid rgba(255, 0, 0, 0.103);
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: #f5f5f53c;
   backdrop-filter: blur(6px);
 }
@@ -248,7 +248,7 @@ body {
   height: 600px;
   margin: 5px auto;
   border: 1px solid rgba(255, 0, 0, 0.103);
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: #f5f5f53c;
   backdrop-filter: blur(6px);
   justify-content: center;
@@ -342,6 +342,91 @@ body {
 }
 
 /****************************************** SECTION 3 ******************************/
+.container-conteudo2 {
+  display: flex;
+  flex-direction: column; 
+  width: 99.5%;
+  border-radius: 8px;
+  margin: 5px auto;
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+}
+
+.silencio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  padding: 20px; 
+}
+
+.silencio1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  height: 200px;
+  background-color: rgba(255,255,255,0.05);
+  margin: 10px auto;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.051);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.silencio1 h2 {
+  text-align: center;
+  margin: 0;
+  color: #fff;
+}
+
+.silencio1 p {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.silencio1:hover {
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.1);
+  transform: scale(1.05);
+}
+
+.silencio-container2 {
+  display: flex; 
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  height: auto;
+  padding: 20px; 
+}
+
+.imagem-silencio {
+  width: 30%;
+  height: 300px;
+  background-color: #ccc; 
+  border-radius: 8px;
+  overflow: hidden; 
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.imagem-silencio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.imagem-silencio:hover{
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+/****************************************** SECTION 4 ******************************/
 .height-auto{
   height: auto;
 }
@@ -398,56 +483,185 @@ body {
   line-height: 1.6;
   text-align: center;
 }
-
-.destaque-explore {
-  background: linear-gradient(to right, #3e3e3e, #1e1e1e);
+/*********************************** DESENVOLVIMENTO SUSTENTÁVEL *************************/
+.section-conteudo-saude{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
 }
 
-.estilo-cta {
+.section-conteudo-saude .imagem-lateral {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.section-conteudo-saude .imagem-lateral img {
+  width: 50%; 
+  height: auto; 
+  object-fit: contain; 
+  border-radius: 10px;
+}
+
+.section-conteudo-saude .texto-biografia{
+  width: 60%;
+  padding: 30px;
+  display: flex;
   flex-direction: column;
-  text-align: center;
-  gap: 20px;
-  padding: 50px 30px;
+  justify-content: center;
+  color: #333;
+  border-radius: 0 10px 10px 0;
+  overflow-y: auto;
+}
+
+.section-conteudo-saude .texto-biografia {
+  background-color: #28a745; 
   color: #fff;
 }
 
-.estilo-cta h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.estilo-cta p {
-  font-size: 18px;
+.section-conteudo-saude .texto-biografia h1{
+  font-size: 32px;
   margin-bottom: 20px;
 }
 
-.botoes-explore {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+.section-conteudo-saude .texto-biografia p{
+  font-size: 17px;
+  line-height: 1.6;
 }
 
-.btn-explorar,
-.btn-ouvir {
-  padding: 14px 28px;
+.section-conteudo-saude .texto-biografia button {
+  width: 30%;
+  margin-top: 40px;
+  padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  background-color: darkred;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #000;
   color: #fff;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.btn-explorar:hover,
-.btn-ouvir:hover {
-  background-color: #ff1f1f;
-  transform: scale(1.05);
+.section-conteudo-saude .texto-biografia button:hover {
+  background-color: darkred;
+  transform: scale(1.03);
 }
 
 
+@media (max-width: 768px) {
+  .section-conteudo-saude, .section-conteudo-paz {
+    flex-direction: column;
+  }
+
+  .imagem-lateral, .texto-biografia {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .imagem-lateral img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .texto-biografia {
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+/*********************************** SOBRE MIM *********************/
+
+.biografia-estilizada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  border-radius: 8px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.biografia-estilizada .coluna {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  max-width: 400px;
+}
+
+.texto-esquerda{
+    margin: 10px auto;
+    width: 75%;
+    height: auto;
+    text-align: center;
+}
+
+.texto-direita{
+  margin: 10px auto;
+  width: 75%;
+  height: auto;
+  text-align: center;
+}
+
+.texto-esquerda h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.texto-esquerda p,
+.texto-direita p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.imagem-central{
+  transition: all 0.3s ease;
+}
+
+.imagem-central a img {
+  width: 500px;
+  height: 300px;
+}
+
+.imagem-central a{
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.imagem-central:hover {
+  cursor: pointer;
+  transform: scale(1.10);
+}
+
+@media (max-width: 960px) {
+  .biografia-estilizada {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .coluna {
+    max-width: 90%;
+  }
+
+  .imagem-central img {
+    margin: 0 auto;
+  }
+}
 
 
 
