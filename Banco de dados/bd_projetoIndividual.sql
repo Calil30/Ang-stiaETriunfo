@@ -28,3 +28,10 @@ CREATE TABLE tentativas (
     pontuacao INT,
     FOREIGN KEY (usuario_id) REFERENCES usuario(id_usuario) ON DELETE CASCADE
 );
+
+CREATE TABLE estatisticas_gerais (
+    id_estatistica INT PRIMARY KEY AUTO_INCREMENT,
+    nome_estatistica VARCHAR(100) NOT NULL,
+    valor VARCHAR(255) NOT NULL,
+    ultima_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
